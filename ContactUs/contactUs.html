@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odessy-Contact</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="contactUs.css">
+</head>
+
+<body>
+  <nav>
+    <div class="navbar--container sticky">
+      <div class="navbar--title" style="color: #d4af37;">
+        <h4>NAVIGATION</h4>
+      </div>
+      <div class="navbar--icon"><i class="ri-menu-unfold-3-line"></i></div>
+    </div>
+    <div class="nav--open close sticky">
+      <div class="nav--open-icon"><i class="fas fa-times"></i></div>
+      <div class="nav--open-title" style="color: #dadada;">Explore</div>
+      <div class="nav--open-menu">
+        <a href="/home.html">Home</a>
+        <a href="/Menu/menu.html">Menu</a>
+        <a href="/AboutUs/aboutUs.html">About</a>
+        <a href="/Blog/blogs.html">Blogs</a>
+        <a href="/Poses/poses.html">Poses</a>
+        <a href="/ContactUs/contactUs.html">Contact</a>
+        <a href="/Login/login.html">Login</a>
+      </div>
+  </nav>
+
+  <h1 class="contactHeading">CONTACT</h1>
+
+  <div class="container">
+
+    <!-- Section 1: Contact Form -->
+    <div class="section">
+      <div class="form-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" >
+          <input type="email" name="email" placeholder="Your Email" >
+          <textarea name="message" placeholder="Your Message" rows="5" ></textarea>
+          <div class="btn">
+            <button type="submit">Submit</button>
+          </div>
+          <p id="error-message" style="color:red;"></p>
+        </form>
+      </div>
+      <img src="/assets/cimg1.jpg" alt="Contact Us">
+    </div>
+
+    <!-- Section 2: Address -->
+    <div class="section">
+      <img src="/assets/cimg2.jpg" alt="Our Restaurant" class="address-img">
+      <div class="address-container">
+        <h2 class="fix"> Visit Us</h2>
+        <p class="fix">
+          123 Luxury Street<br>
+          City Name, State<br>
+          Postal Code, Country<br>
+          Phone: +123 456 7890
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 3: Quote -->
+    <div class="section">
+      <div class="quote-container">
+        "The best way to find yourself is to lose yourself in the service of others."
+      </div>
+      <img src="/assets/cimg3.jpeg" alt="Affirmation Quote" class="quote-img">
+    </div>
+
+  </div>
+
+
+  <hr style="color: #dadada;">
+  <footer class="footer text-center text-md-start">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Column 1: Company Info -->
+        <div class="col-md-4 mb-4">
+          <h5 class="company-name">Odyessy</h5>
+          <p>Experience the finest dining with a touch of elegance. Visit us for an extraordinary culinary journey.</p>
+        </div>
+
+        <!-- Footer Column 2: Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/AboutUs/aboutUs.html">About Us</a></li>
+            <li><a href="/Menu/menu.html">Our Menu</a></li>
+            <li><a href="/ContactUs/contactUs.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Services -->
+        <div class="col-md-2 mb-4">
+          <h5>Our Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Private Dining</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 4: Contact Us -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Us</h5>
+          <p>Email: info@Odyessydine.com</p>
+          <p>Phone: +123 456 7890</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Footer Bottom -->
+      <div class="row">
+        <div class="col-md-6 footer-bottom text-md-start mb-2 mb-md-0">
+          &copy; 2024 Odyessy. All Rights Reserved.
+        </div>
+        <div class="col-md-6 footer-bottom text-md-end">
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="contactUs.js"></script>
+</body>
+
+</html>

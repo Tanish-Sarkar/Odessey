@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+  padding: 0;
+  font-family: Lato;
+}
+
+body{
+  background-image: url("/assets/loginBackground.jpg");
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  &:hover {
+    background: #222;
+    color: #d4af37;
+  }
+}
+
+.sticky {
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar--container {
+  top: 15%;
+  background: #000000;
+  height: 27.5vh;
+  width: 6.5vw;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+}
+
+.navbar--icon {
+  margin-top: 24px;
+  margin-left: 49px;
+  font-size: 1em;
+  color: #393939;
+  &:hover {
+    color: #d4af37;
+    cursor: pointer;
+  }
+}
+
+.navbar--title {
+  margin-left: 27px;
+  margin-top: 35px;
+}
+
+.navbar--title h4 {
+  writing-mode: vertical-rl;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .34em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+/* Navigation open */
+.nav--open {
+  height: 100vh;
+  width: 300px;
+  background: #000000;
+  transition: all .4s ease-out;
+  opacity: 1;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+}
+
+.nav--open-icon {
+  text-align: right;
+  padding: 20px;
+}
+
+.nav--open-icon i {
+  font-size: 2em;
+  color: #92BFB1;
+  &:hover {
+    color: #333333;
+    cursor: pointer;
+  }
+}
+
+.nav--open-title {
+  font-family: 'Playfair Display', serif;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  text-align: center;
+  margin-top: 35%;
+}
+
+.nav--open-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.nav--open-menu a {
+  font-size: 1.7vw;
+  font-weight: 100;
+  font-family: 'Playfair Display', serif;
+  padding: 15px 0;
+}
+
+.close {
+  transform: translateX(-300px);
+  transition: all .4s ease-out;
+  opacity: 0;
+}
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #000000;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color .3s ease;
+}
+
+.close-button:hover {
+  background-color: #222;
+  color: #d4af37;
+}
+
+ /* ================================= BOXES =============================== */
+ .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.box1,.box2 {
+  width: 35vw;
+  height: 55vh;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 7vh;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 35vh;
+}
+.box1 > h1 {
+  font-size: 3vw;
+  color: #d4af37;
+  font-family: "Playfair";
+}
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Styling */
+.form-floating {
+  position: relative;
+}
+.form-floating > label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: #ccc;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+.form-floating > input:focus + label,
+.form-floating > input:not(:placeholder-shown) + label {
+  top: 0;
+  left: 10px;
+  font-size: 12px;
+  color: #d4af37;
+}
+.form-control {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+}
+.form-control::placeholder {
+  color: transparent;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #d4af37;
+}
+
+/* Button styling */
+.btn:hover {
+  background-color: #b68b3c;
+}

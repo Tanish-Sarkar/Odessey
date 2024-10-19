@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+/* ================================ NAVBAR ======================================= */
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    &:hover {
+      background: #222;
+      color: #d4af37;
+    }
+  }
+  
+  .sticky {
+    position: fixed;
+    z-index: 110;
+  }
+  
+  .navbar--container {
+    top: 15%;
+    background: #000000;
+    height: 27.5vh;
+    width: 6.5vw;
+    box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+  }
+  
+  .navbar--icon {
+    margin-top: 24px;
+    margin-left: 49px;
+    font-size: 1em;
+    color: #393939;
+    &:hover {
+      color: #d4af37;
+      cursor: pointer;
+    }
+  }
+  
+  .navbar--title {
+    margin-left: 27px;
+    margin-top: 35px;
+  }
+  
+  .navbar--title h4 {
+    writing-mode: vertical-rl;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .34em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+  
+  /* Navigation open */
+  .nav--open {
+    height: 100vh;
+    width: 300px;
+    background: #000000;
+    transition: all .4s ease-out;
+    opacity: 1;
+    box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+  }
+  
+  .nav--open-icon {
+    text-align: right;
+    padding: 20px;
+  }
+  
+  .nav--open-icon i {
+    font-size: 2em;
+    color: #92BFB1;
+    &:hover {
+      color: #333333;
+      cursor: pointer;
+    }
+  }
+  
+  .nav--open-title {
+    font-family: 'Playfair Display', serif;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-align: center;
+    margin-top: 35%;
+  }
+  
+  .nav--open-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .nav--open-menu a {
+    font-size: 1.7vw;
+    font-weight: 100;
+    font-family: 'Playfair Display', serif;
+    padding: 15px 0;
+  }
+  
+  .close {
+    transform: translateX(-300px);
+    transition: all .4s ease-out;
+    opacity: 0;
+  }
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #000000;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color .3s ease;
+  }
+  
+  .close-button:hover {
+    background-color: #222;
+    color: #d4af37;
+  }
+
+  /* =========================== Page 1 =================================== */
+
+  .page1{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .page1 img{
+    width: 100%;
+    height: 80vh;
+  }
+  .MenuHeading{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 12vh;
+    font-size: 12vh;
+    font-family: "Playfair Display", serif;
+
+}
+.MenuHeading::first-letter{
+    color: #d4af37;
+}
+
+/* =============================== page 2 ================================== */
+.page2{
+    width: 80vw;
+    height: 100vh;
+    margin: 0 11.25vw;
+    background-color: #000;
+    color: #fff;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.menu-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding: 40px;
+    background-color: #111; /* Darker background for premium feel */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+.menu-section:hover {
+    transform: scale(1.02); /* Subtle zoom on hover */
+}
+.menu-section img {
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease-in-out;
+}
+.menu-section:hover img {
+    opacity: 0.9; /* Slight opacity effect */
+}
+.menu-section .content {
+    width: 60%;
+}
+.content{
+    font-family: "Lato";
+}
+.content>h2{
+    font-family: "Playfair";
+}
+h2 {
+    color: #d4af37;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+ul li::before {
+    content: '•';
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+/* Section 1 and 3: Image on the right */
+.right-image {
+    flex-direction: row-reverse;
+}
+/* Section 2 and 4: Image on the left */
+.left-image {
+    flex-direction: row;
+}
+
+/* Add smooth transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+/* ------------------------- footer ------------------------------- */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+  font-family: "Playfair";
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Lato";
+}
+
+.footer a:hover {
+  color: #d4af37; /* No hover effect */
+}
+
+/* Divider line between sections */
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 40px 0;
+}
+
+/* Section titles */
+.footer h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Company Name Styling */
+.footer .company-name {
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Contact and Social icons */
+.footer .social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Reduce link list padding */
+.footer .list-unstyled li {
+  margin-bottom: 10px;
+}
+
+/* Footer bottom text */
+.footer-bottom {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.foot{
+  margin-top: 240vh;
+}
+
+/* ---------------------------------------- form ------------------------------ */
+.feedback-form {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  width: 80%;
+  margin: 40px auto;
+}
+.feedback-form h2 {
+  color: #d4af37;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.form-label {
+  color: #d4af37;
+}
+.form-control {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #d4af37;
+}
+.form-control:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+}
+.btn-submit {
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+.btn-submit:hover {
+  background-color: #b78e30;
+}

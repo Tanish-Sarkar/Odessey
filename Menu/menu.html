@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odyseey-menu</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar--container sticky">
+          <div class="navbar--title" style="color: #d4af37;"><h4>NAVIGATION</h4></div>
+          <div class="navbar--icon"><i class="ri-menu-unfold-3-line"></i></div>
+        </div>
+        <div class="nav--open close sticky">
+          <div class="nav--open-icon"><i class="fas fa-times"></i></div>
+          <div class="nav--open-title" style="color: #dadada;">Explore</div>
+          <div class="nav--open-menu">
+            <a href="/home.html">Home</a>
+            <a href="/Menu/menu.html">Menu</a>
+            <a href="/AboutUs/aboutUs.html">About</a>
+            <a href="/Blog/blogs.html">Blogs</a>
+            <a href="/Poses/poses.html">Poses</a>
+            <a href="/ContactUs/contactUs.html">Contact</a>
+            <a href="/Login/login.html">Login</a>
+          </div>
+       </nav>
+
+
+       <div class="page1">
+        <img src="/assets/mimg.jpg" alt="">
+        <h1 class="MenuHeading">MENU</h1>
+       </div>
+
+       <div class="page2">
+        <section class="sec1">
+            <div class="container">
+
+                <!-- Section 1: Breakfast -->
+                <div class="menu-section right-image">
+                    <div class="content">
+                        <h2>Breakfast</h2>
+                        <ul>
+                            <li>Pancakes with Maple Syrup</li>
+                            <li>Gourmet Omelette</li>
+                            <li>French Toast with Berries</li>
+                            <li>Greek Yogurt with Honey</li>
+                        </ul>
+                    </div>
+                    <img src="/assets/breakfast.jpg" alt="Breakfast Image">
+                </div>
+        
+                <!-- Section 2: Beverages -->
+                <div class="menu-section left-image">
+                    <div class="content">
+                        <h2>Beverages</h2>
+                        <ul>
+                            <li>Artisan Espresso</li>
+                            <li>Cappuccino with Cream</li>
+                            <li>Organic Green Tea</li>
+                            <li>Signature Smoothie</li>
+                        </ul>
+                    </div>
+                    <img src="/assets/beverage.jpg" alt="Beverages Image">
+                </div>
+        
+                <!-- Section 3: Lunch & Dinner -->
+                <div class="menu-section right-image">
+                    <div class="content">
+                        <h2>Lunch & Dinner</h2>
+                        <ul>
+                            <li>Indian Thali</li>
+                            <li>Filet Mignon</li>
+                            <li>Pasta Primavera</li>
+                            <li>Classic Caesar Salad</li>
+                        </ul>
+                    </div>
+                    <img src="/assets/Lunch.jpg" alt="Lunch & Dinner Image">
+                </div>
+        
+                <!-- Section 4: Wine -->
+                <div class="menu-section left-image">
+                    <div class="content">
+                        <h2>Chill Wine</h2>
+                        <ul>
+                            <li>Vintage Red Wine</li>
+                            <li>Chilled White Wine</li>
+                            
+                        </ul>
+                    </div>
+                    <img src="/assets/wine.jpg" alt="Wine and Dessert Image">
+                </div>
+                
+                 <!-- Section 5: Dessert -->
+                 <div class="menu-section right-image">
+                    <div class="content">
+                        <h2>Dessert Delights</h2>
+                        <ul>
+                            <li>Dark Chocolate Soufflé</li>
+                            <li>Fresh Fruit Tart</li>
+                        </ul>
+                    </div>
+                    <img src="/assets/cake.jpg" alt="Lunch & Dinner Image">
+                </div>
+        
+            </div>
+        </section>
+<hr style="color: #dadada;">
+        <section class="sec2">
+            <div class="feedback-form">
+                <h2>Feedback</h2>
+                <form id="feedbackForm">
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                  </div>
+                  
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Your Feedback</label>
+                      <textarea class="form-control" id="message" rows="5" placeholder="Enter your feedback"></textarea>
+                  </div>
+              
+                  <button type="submit" class="btn btn-submit">Submit</button>
+              
+                  <!-- Error Message -->
+                  <p id="error-message" style="color:red;"></p>
+              </form>
+              
+            </div>
+        
+        </section>
+
+       </div>
+
+
+       <div class="foot">
+        <hr style="color: #dadada;">
+        <footer class="footer text-center text-md-start">
+            <div class="container">
+              <div class="row">
+                <!-- Footer Column 1: Company Info -->
+                <div class="col-md-4 mb-4">
+                  <h5 class="company-name">Odyessy</h5>
+                  <p>Experience the finest dining with a touch of elegance. Visit us for an extraordinary culinary journey.</p>
+                </div>
+        
+                <!-- Footer Column 2: Quick Links -->
+                <div class="col-md-2 mb-4">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/AboutUs/aboutUs.html">About Us</a></li>
+                    <li><a href="/Menu/menu.html">Our Menu</a></li>
+                    <li><a href="/ContactUs/contactUs.html">Contact</a></li>
+                  </ul>
+                </div>
+        
+                <!-- Footer Column 3: Services -->
+                <div class="col-md-2 mb-4">
+                  <h5>Our Services</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Private Dining</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                  </ul>
+                </div>
+        
+                <!-- Footer Column 4: Contact Us -->
+                <div class="col-md-4 mb-4">
+                  <h5>Contact Us</h5>
+                  <p>Email: info@Odyessydine.com</p>
+                  <p>Phone: +123 456 7890</p>
+                  <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+        
+              <hr>
+        
+              <!-- Footer Bottom -->
+              <div class="row">
+                <div class="col-md-6 footer-bottom text-md-start mb-2 mb-md-0">
+                  &copy; 2024 Odyessy. All Rights Reserved.
+                </div>
+                <div class="col-md-6 footer-bottom text-md-end">
+                  <a href="#" class="me-3">Privacy Policy</a>
+                  <a href="#">Terms & Conditions</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        
+       </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
