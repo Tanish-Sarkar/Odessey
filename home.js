@@ -107,3 +107,12 @@ let prev = document.getElementById('prev');
     next.onclick = nextSlider;
     prev.onclick = prevSlider;
     const autoNext = setInterval(nextSlider, 3000);
+
+
+
+    function Menu() {
+      window.location.href = "/Menu/menu.html"
+    }
+    function Book() {
+      window.open("booking.html", "_blank"); 
+    }

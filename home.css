@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i');
-
+*{
+  ::selection{
+    color: #000;
+    background-color: #d4af37;
+  }
+}
 body {
   margin: 0;  
   box-sizing: border-box;
@@ -339,6 +344,7 @@ p {
 
 }
 
+
 /* ================================= PAGE 4 ===================================== */
 .page4{
   width: 76vw;
@@ -462,6 +468,41 @@ p {
   color: rgba(255, 255, 255, 0.7);
 } 
 
+/* ------------------Responsiveness-------------------  */
+
+@media (max-width: 992px) {
+  .navbar--container{
+    width: 10%;
+  }
+  .page4{
+    margin-top: 200vh;
+  }
+  .page4 p{
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 768px) {
+  .navbar--container{
+    width: 10%;
+  }
+  .page4{
+    margin-top: 200vh;
+  }
+  .page4 p{
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 555px) {
+  .navbar--container{
+    width: 10%;
+  }
+  .page4{
+    margin-top: 200vh;
+  }
+  .page4 p{
+    font-size: 1.5vw;
+  }
+}
 
 
 

@@ -71,51 +71,75 @@ let openIcon = document.querySelector('.navbar--icon');
 
 
     // ------------------------------------------------------------------------------------------------------
-
     document.getElementById('contactForm').addEventListener('submit', function (event) {
       event.preventDefault(); // Prevent form from submitting
-
+  
       // Get form values
       let name = document.querySelector('input[name="name"]').value.trim();
       let email = document.querySelector('input[name="email"]').value.trim();
       let message = document.querySelector('textarea[name="message"]').value.trim();
       let errorMessage = document.getElementById('error-message');
-
+  
       // Clear previous error message
       errorMessage.textContent = '';
-
+  
       // Validate name
       if (name === '') {
-        errorMessage.textContent = 'Your Name is required.';
-        return;
+          errorMessage.textContent = 'Your Name is required.';
+          return;
       }
-
+  
       // Validate email
       if (!validateEmail(email)) {
-        errorMessage.textContent = 'Please enter a valid email address.';
-        return;
+          errorMessage.textContent = 'Please enter a valid email address.';
+          return;
       }
-
+  
       // Validate message
       if (message === '') {
-        errorMessage.textContent = 'Your Message is required.';
-        return;
+          errorMessage.textContent = 'Your Message is required.';
+          return;
       }
-
+  
       // If validation passes, simulate form submission
       submitContactForm(name, email, message);
-    });
-
-    // Function to validate email format using a regular expression
-    function validateEmail(email) {
+  });
+  
+  // Function to validate email format using a regular expression
+  function validateEmail(email) {
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailPattern.test(email);
-    }
-
-    // Simulate form submission (could replace this with an API call)
-    function submitContactForm(name, email, message) {
-      alert('Form submitted successfully!\nName: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
-
+  }
+  
+  // Simulate form submission and show a toast notification
+  function submitContactForm(name, email, message) {
+      // Show the toast notification instead of the alert
+      showToast('Form submitted successfully! Thank you, ' + name + '!');
+  
       // Optionally, reset the form after submission
       document.getElementById('contactForm').reset();
-    }
+  }
+  
+  // Function to show the toast notification
+  function showToast(message) {
+      let toast = document.getElementById('toast');
+      let toastMessage = document.getElementById('toast-message');
+  
+      // Set the message for the toast
+      toastMessage.textContent = message;
+  
+      // Add the 'show' class to make the toast visible
+      toast.classList.add('show');
+  
+      // Hide the toast after 3 seconds
+      setTimeout(function() {
+          toast.classList.remove('show');
+          toast.classList.add('hide');
+      }, 3000);
+  
+      // Remove the 'hide' class after the toast fades out
+      setTimeout(function() {
+          toast.classList.remove('hide');
+      }, 3500); // Wait for the fade-out to complete before resetting
+  }
+  

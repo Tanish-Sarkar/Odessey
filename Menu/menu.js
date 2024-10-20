@@ -78,19 +78,51 @@ document.getElementById('feedbackForm').addEventListener('submit', function (eve
     let feedback = document.getElementById('message').value.trim();
     let errorMessage = document.getElementById('error-message');
 
-    errorMessage.textContent = '';
+    errorMessage.textContent = ''; // Clear previous error messages
+
+    // Validate name
     if (name === '') {
         errorMessage.textContent = 'Your Name is required.';
         return;
     }
+
+    // Validate feedback message
     if (feedback === '') {
         errorMessage.textContent = 'Your Feedback is required.';
         return;
     }
+
+    // If validation passes, submit feedback and show toast
     submitFeedback(name, feedback);
 });
 
 function submitFeedback(name, feedback) {
-    alert('Feedback submitted successfully!\nName: ' + name + '\nFeedback: ' + feedback);
+    // Show the toast notification instead of the alert
+    showToast('Feedback submitted successfully! Thank you, ' + name + '!');
+
+    // Reset the form after submission
     document.getElementById('feedbackForm').reset();
+}
+
+// Function to show the toast notification
+function showToast(message) {
+    let toast = document.getElementById('toast');
+    let toastMessage = document.getElementById('toast-message');
+
+    // Set the message for the toast
+    toastMessage.textContent = message;
+
+    // Add the 'show' class to make the toast visible
+    toast.classList.add('show');
+
+    // Hide the toast after 3 seconds
+    setTimeout(function() {
+        toast.classList.remove('show');
+        toast.classList.add('hide');
+    }, 3000);
+
+    // Remove the 'hide' class after the toast fades out
+    setTimeout(function() {
+        toast.classList.remove('hide');
+    }, 3500); // Wait for the fade-out to complete before resetting
 }

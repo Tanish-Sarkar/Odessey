@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+*{
+  ::selection{
+    color: #000;
+    background-color: #d4af37;
+  }
+}
 body{
     background-color: #000;
     margin: 0;
@@ -304,4 +309,131 @@ span{
 .footer-bottom {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+/* ============================== Responsive Styles ============================== */
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+  
+
+  .content h1 {
+      font-size: 2rem;
+  }
+
+  .content p {
+      font-size: 1rem;
+      width: 80%;
+  }
+
+  .sec2 {
+      flex-direction: column;
+  }
+
+  .part1, .part2, .part3 {
+      width: 100%;
+      height: auto; /* Allow for flexibility */
+  }
+
+  .part1 > p, .part3 > p {
+      font-size: 4vw; /* Adjust font size */
+      margin-left: 5vw;
+      margin-right: 5vw;
+  }
+
+  .part1 > h1, .part3 > h1 {
+      font-size: 5vw; /* Adjust font size */
+  }
+
+  .sec3 h3 {
+      font-size: 4vw; /* Adjust font size */
+  }
+
+  .card-img-top {
+      width: 90%; /* Responsive card images */
+      height: auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  
+  
+
+  .content h1 {
+      font-size: 2.5rem;
+  }
+
+  .content p {
+      font-size: 1.2rem;
+      width: 70%;
+  }
+
+  .sec2 {
+      flex-direction: column;
+  }
+
+  .part1, .part2, .part3 {
+      width: 100%;
+      height: auto; /* Allow for flexibility */
+  }
+
+  .part1 > p, .part3 > p {
+      font-size: 3.5vw; /* Adjust font size */
+  }
+
+  .part1 > h1, .part3 > h1 {
+      font-size: 4vw; /* Adjust font size */
+  }
+
+  .sec3 h3 {
+      font-size: 3.5vw; /* Adjust font size */
+  }
+
+  .card-img-top {
+      width: 90%; /* Responsive card images */
+      height: auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .sec2 {
+      flex-direction: row;
+  }
+
+  .part1, .part2, .part3 {
+      width: 30%; /* Set a specific width for desktop view */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .sec2 {
+      flex-direction: row;
+  }
+
+  .part1, .part2, .part3 {
+      width: 33.3%; /* Original width */
+  }
+}
+
+/* ------------------Responsiveness-------------------  */
+
+@media (max-width: 992px) {
+  .navbar--container{
+    width: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar--container{
+    width: 10%;
+  }
+}
+@media (max-width: 555px) {
+  .navbar--container{
+    width: 10%;
+  }
 }

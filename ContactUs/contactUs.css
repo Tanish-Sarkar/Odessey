@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+*{
+  ::selection{
+    color: #000;
+    background-color: #d4af37;
+  }
+}
 
 body{
     background-color: #000000f6;
@@ -25,7 +30,7 @@ a {
     top: 15%;
     background: #000000;
     height: 27.5vh;
-    width: 6.5vw;
+    /* width: 6.5vw; */
     box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
   }
   
@@ -153,8 +158,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 50px 0;
+    padding: 5% 0;
     border-bottom: 1px solid #333;
+    /* flex-wrap: wrap; */
 }
 
 .section img {
@@ -248,12 +254,16 @@ a {
   color: #fff;
   padding: 60px 0;
   font-family: "Playfair";
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .footer a {
   color: #fff;
   text-decoration: none;
   font-family: "Lato";
+
 }
 
 .footer a:hover {
@@ -295,4 +305,138 @@ a {
 .footer-bottom {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
+}
+/* Toast styling */
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 2px solid #d4af37;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+/* Show the toast */
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Hide the toast */
+.toast.hide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* ------------------------Responsive-------------------------------- */
+
+/* ... Existing CSS ... */
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .form-container, .quote-container, .address-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-img, .address-img, .quote-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fix{
+    margin-left: 0;
+    margin-top: 3%;
+    text-align: center;
+  }
+
+  .quote-container {
+    text-align: center;
+  }
+  .quote-img{
+    margin: auto;
+  }
+  .navbar--container{
+    width: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar--container{
+    width: 10%;
+  }
+  .contactHeading {
+    font-size: 8vh; /* Adjust heading size for smaller screens */
+  }
+
+  .section {
+    padding: 3% 0; /* Reduce padding for smaller screens */
+  }
+
+  .form-container input, .form-container textarea {
+    font-size: 14px; /* Adjust input field size for smaller screens */
+  }
+
+  .form-container button {
+    padding: 10px 15px; /* Adjust button padding for smaller screens */
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%; /* Adjust button width for smaller screens */
+  }
+
+  .quote-container {
+    font-size: 18px; /* Adjust quote font size for smaller screens */
+  }
+  .quote-img{
+    margin: auto;
+  }
+  .address-container {
+    font-size: 16px; /* Adjust address font size for smaller screens */
+  }
+
+  /* Footer Responsive Adjustments */
+  .footer .row {
+    flex-direction: column;
+  }
+
+  .footer .col-md-4,
+  .footer .col-md-2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer .company-name {
+    font-size: 20px;
+  }
+
+  .footer .social-icons a {
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 555px) {
+  .navbar--container{
+    width: 10%;
+  }
 }
