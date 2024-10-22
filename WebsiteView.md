@@ -1,6 +1,3 @@
-
----
-
 # Odyssey Restaurant - Luxury Dining Experience
 
 Welcome to the **Odyssey Restaurant** website! This is a UI-focused project designed for a luxury dining experience, featuring an elegant gold, black, and white theme. The website is aimed at reflecting the high-end feel of a premium restaurant, offering users a visually immersive experience.
