@@ -256,8 +256,8 @@ a {
 
 
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-block mt-3"
-          style="width: 100%; background-color: #d4af37; color: #000;">Resgister</button>
+        <button type="submit" class="btn btn-block mt-3" onclick="Menu()"
+          style="width: 100%; background-color: #d4af37; color: #000;" >Book</button>
 
         <!-- Error Message -->
         <p id="error-message" style="color:red;"></p>
@@ -341,6 +341,9 @@ a {
       window.location.href = '/home.html';
     }
 
+function Menu() {
+  window.location.href= "./Menu/menu.html"
+}
 
   </script>
 </body>
